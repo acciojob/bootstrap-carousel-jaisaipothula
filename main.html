@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for carousel slides */
+        .first-slide {
+            background-color: #ff9999; /* Example color */
+        }
+        .second-slide {
+            background-color: #66b3ff; /* Example color */
+        }
+        .third-slide {
+            background-color: #99ff99; /* Example color */
+        }
+        .fourth-slide {
+            background-color: #ffcc99; /* Example color */
+        }
+        .fifth-slide {
+            background-color: #c2c2f0; /* Example color */
+        }
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%; /* Adjust width as needed */
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: black; /* Example color for icons */
+        }
+    </style>
 </head>
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item first-slide">
+            <img src="https://via.placeholder.com/800x400?text=First+Slide" class="d-block w-100" alt="First Slide">
+        </div>
+        <div class="carousel-item second-slide">
+            <img src="https://via.placeholder.com/800x400?text=Second+Slide" class="d-block w-100" alt="Second Slide">
+        </div>
+        <div class="carousel-item third-slide active">
+            <img src="https://via.placeholder.com/800x400?text=Third+Slide" class="d-block w-100" alt="Third Slide">
+        </div>
+        <div class="carousel-item fourth-slide">
+            <img src="https://via.placeholder.com/800x400?text=Fourth+Slide" class="d-block w-100" alt="Fourth Slide">
+        </div>
+        <div class="carousel-item fifth-slide">
+            <img src="https://via.placeholder.com/800x400?text=Fifth+Slide" class="d-block w-100" alt="Fifth Slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
- 
 </html>
