@@ -5,47 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Carousel</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Add custom CSS if needed -->
     <style>
-        /* Custom styles for control icons */
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5); /* Dark background for visibility */
-            border-radius: 50%;
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
         }
-        .carousel-control-prev-icon {
-            background-image: url('https://maxcdn.icons8.com/Share/icon/Navigation//chevron_left1600.png');
-        }
-        .carousel-control-next-icon {
-            background-image: url('https://maxcdn.icons8.com/Share/icon/Navigation//chevron_right1600.png');
+        .carousel-indicators [data-bs-target] {
+            background-color: #000;
         }
     </style>
 </head>
 <body>
     <div id="myCarousel" class="carousel slide">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <!-- Carousel Inner -->
         <div class="carousel-inner">
             <div class="carousel-item first-slide">
                 <img src="https://via.placeholder.com/800x400?text=First+Slide" class="d-block w-100" alt="First Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First Slide</h5>
+                    <p>Description for the first slide.</p>
+                </div>
             </div>
             <div class="carousel-item second-slide">
                 <img src="https://via.placeholder.com/800x400?text=Second+Slide" class="d-block w-100" alt="Second Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second Slide</h5>
+                    <p>Description for the second slide.</p>
+                </div>
             </div>
-            <div class="carousel-item third-slide active">
+            <div class="carousel-item active third-slide">
                 <img src="https://via.placeholder.com/800x400?text=Third+Slide" class="d-block w-100" alt="Third Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third Slide</h5>
+                    <p>Description for the third slide.</p>
+                </div>
             </div>
             <div class="carousel-item fourth-slide">
                 <img src="https://via.placeholder.com/800x400?text=Fourth+Slide" class="d-block w-100" alt="Fourth Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth Slide</h5>
+                    <p>Description for the fourth slide.</p>
+                </div>
             </div>
             <div class="carousel-item fifth-slide">
                 <img src="https://via.placeholder.com/800x400?text=Fifth+Slide" class="d-block w-100" alt="Fifth Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fifth Slide</h5>
+                    <p>Description for the fifth slide.</p>
+                </div>
             </div>
         </div>
+
+        <!-- Carousel Controls -->
         <button class="carousel-control-prev left carousel-control" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next right carousel-control" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
@@ -53,6 +80,6 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
