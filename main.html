@@ -4,24 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Carousel Example</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom styles for carousel slides */
-        .first-slide {
-            background-color: #ff9999; /* Example color */
-        }
-        .second-slide {
-            background-color: #66b3ff; /* Example color */
-        }
-        .third-slide {
-            background-color: #99ff99; /* Example color */
-        }
-        .fourth-slide {
-            background-color: #ffcc99; /* Example color */
-        }
-        .fifth-slide {
-            background-color: #c2c2f0; /* Example color */
+        /* Optional: Set a height for the carousel images */
+        .carousel-item img {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            object-fit: cover;
         }
     </style>
 </head>
@@ -45,20 +34,18 @@
             <img src="https://via.placeholder.com/800x400?text=Fifth+Slide" class="d-block w-100" alt="Fifth Slide">
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    <!-- Left and right controls -->
+    <button class="carousel-control-prev left" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">&lt;</span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <button class="carousel-control-next right" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">&gt;</span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
